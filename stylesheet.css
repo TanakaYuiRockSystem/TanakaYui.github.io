@@ -1,0 +1,788 @@
+# TanakaYui.github.io
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+.body {
+    background-color:#e1daca;
+    margin-left: 150px;
+    overflow-x: hidden;
+}
+
+/* PCのみ表示されるmenu画面 */
+.moto {
+    position: fixed;
+    right: 100px;
+    top: 40px;
+}
+
+.moto li {
+    list-style: none;
+}
+
+#menu {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 50px;
+    color: #2c4473;
+}
+
+.moto a {
+    text-decoration:none ;
+    color: #2c4473;
+    font-size: 30px;
+    margin:auto 0;
+}
+
+.menubar:hover {
+    .chap{
+        animation: pikopiko 1s steps(2, start) infinite;
+    }
+    
+}
+
+@keyframes pikopiko {
+    from {
+      transform: rotate(20deg);
+    }
+    to {
+      transform: rotate(-10deg);
+    }
+  }
+
+.menubar {
+    display: flex;
+    width: 570px;
+    border-bottom: #2c4473 3px solid;
+    margin-bottom: 10px;
+}
+
+#iji,#big,#fugu {
+    width: 70px;
+}
+
+#big {
+    margin-right: 10px;
+}
+
+#tete {
+    width: 60px;
+    margin-right: 20px;
+}
+
+#suizokkann {
+    width: 120px;
+    margin-left: -30px;
+    margin-right: -10px;
+}
+
+#ebi {
+    width: 80px;
+}
+
+#tamago {
+    margin-left: 10px;
+    width: 60px;
+}
+
+.mokuji {
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.nihonn {
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.insta {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    right: 0;
+}
+
+
+.content {
+    max-width: 500px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    background-color:#EDE6D7;
+}
+
+.haikei1 {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 60px;
+    color: #2c4473;
+    font-weight: 900;
+    padding: 0%;
+}
+
+#topga {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.moji,.profz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.word {
+    margin: 0;
+    padding-right: 3px;
+    height: 50px;
+}
+
+#day {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+#prof {
+    font-family: 'Bowlby One SC', cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 55px;
+    text-align: center;
+    font-weight: 900;
+    color: #2c4473;
+}
+
+.info {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin:30px auto;
+    border: #2c4473 6px solid; /*境界線の指定*/
+    padding:0px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.dd {
+    font-family: 'Bowlby One SC', cursive;
+    color: #EDE6D7;
+    background-color: #2c4473;
+    height: 50px;
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+}
+
+.ff {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:50px ;
+    text-align: center;
+    color: #2c4473;
+    margin: 30px;
+}
+
+#te {
+    position: absolute;
+    width: 120px;
+    right: 10px;
+    top: 60px;
+    transform: scale(-1, 1);
+}
+
+#kuma{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    width: 110px;
+}
+
+#kumasan {
+    position: relative;
+}
+
+.food {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #EDE6D7;
+    padding-top: 30px;
+}
+
+#food {
+    background-color:#006633;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.eat {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
+}
+
+.shoku {
+    padding-left: 0;
+    display: flex;
+    animation: loop-slide 40s infinite linear 1s both;
+}
+
+@-webkit-keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+  }
+  @keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.gohan,.otan {
+    list-style: none;
+}
+
+.mesi {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+.sui {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.aqua {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: #EDE6D7 ;
+    padding-top: 30px;
+}
+
+#penguin {
+    position: absolute;
+    top: 95px;
+    right:100px;
+    z-index: 1;
+    display: flex;
+    width: 30px;
+}
+
+#pen {
+    position: absolute;
+    top: 65px;
+    right:45px;
+    z-index: 1;
+    display: flex;
+    width: 50px;
+}
+
+#fish {
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    z-index: 1;
+    display: flex;
+    width: 140px;
+    transform: rotate(-30deg);
+}
+
+#sakana {
+    position: absolute;
+    top: 100px;
+    left: 110px;
+    z-index: 1;
+    display: flex;
+    width: 50px;
+}
+
+#suisui{
+    background-color:#2c4473;
+    border-radius: 20px;
+    margin-bottom:60px ;
+    max-height: 800px;
+}
+
+.wave {
+    position: relative;
+    height: 600px;
+    border-bottom: 30px solid #2c4473;
+    border-radius: 0 0 20px 20px;
+}
+
+canvas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+.happy {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    color: #EDE6D7;
+}
+
+#bun {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: #EDE6D7;
+}
+   
+.omedeta {
+    padding-left: 0;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.hapiba {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 100px;
+}
+
+#st{
+    background-color:#D04D18;
+    border-radius: 20px;
+}
+
+#ttt {
+    margin-top:50px ;
+    background-color: #f8b500;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.cup , .hyui{
+    position: relative;
+
+}
+
+.cc {
+    width: 300px;
+}
+
+.uu {
+    width: 200px;
+}
+
+#uu {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 60%;
+    margin-top: 100px;
+}
+
+#hyou {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 40%;
+}
+
+#car {
+    position: absolute;
+    top: 370px;
+    left: 0;
+    width: 50%;
+}
+
+#up{
+    position: absolute;
+    top: 370px;
+    right: 0;
+    width: 50%;
+}
+
+#best {
+    color: #f8b500 ;
+    font-family: 'Oi', cursive;
+    font-size: 60px;
+    margin: 0;
+    margin-left: 20px;
+    position: absolute;
+    top: 230px;
+    left: 9px;
+    z-index: 3;
+    height: 50px;
+    -webkit-text-stroke:4px #EDE6D7 ;
+}
+
+#shot {
+    color:#f8b500  ;
+    font-family: 'Oi', cursive;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-left: 60px;
+    position: absolute;
+    top: 260px;
+    left: 0;
+    z-index: 3;
+    height: 50px;
+    -webkit-text-stroke:4px #EDE6D7 ;
+}
+
+#siti {
+    width: 330px;
+    margin-top: 60px;
+    position: absolute;
+    right: 0;
+}
+
+#san {
+    margin-top: 60px;
+    position: relative;
+    height: 700px;
+    background-color: #f4dcdc;
+    border-radius: 20px;
+}
+
+#seven {
+    position: absolute;
+    margin-top: 100px;
+    left: 60px;
+}
+
+#five {
+    position: absolute;
+    margin-top: 160px;
+    left: 60px;
+}
+ 
+#three {
+    position: absolute;
+    margin-top: 220px;
+    left: 60px;
+}
+
+#fifteen {
+    font-family: 'Yuji Syuku', serif;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#nen{
+    font-family: 'Yuji Syuku', serif;
+    font-size: 25px;
+    position: absolute;
+    bottom:240px;
+    left: 79px;
+    font-weight: bold;
+}
+
+.ni {
+    margin: 0;
+}
+
+#bou {
+    font-family: 'Yuji Syuku', serif;
+    font-size: 20px;
+    width: 10px;
+    position: absolute;
+    bottom:375px;
+    left: 85px;
+    font-weight: bold;
+}
+
+#boo {
+    font-family: 'Yuji Syuku', serif;
+    font-size: 20px;
+    width: 10px;
+    position: absolute;
+    bottom:210px;
+    left: 85px;
+    font-weight: bold;
+}
+
+#katari {
+    font-family: 'Yuji Syuku', serif;
+    font-size: 20px;
+}
+
+#iya {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+}
+
+#sune {
+    position: absolute;
+    right: 110px;
+    bottom: 0%;
+}
+
+#in {
+    width: 70px;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+
+#acc {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    margin-top: 70px;
+    margin-left: 30px;
+    color: black;
+}
+
+.gram a{
+    display: flex;
+    text-decoration: none;
+}
+
+  
+/*矢印の設定*/
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    z-index: 3;
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #333;/*矢印の色*/
+    border-right: 2px solid #333;/*矢印の色*/
+    height: 25px;
+    width: 25px;
+}
+.slick-prev {/*戻る矢印の位置と形状*/
+    left:2.5%;
+    transform: rotate(-135deg);
+}
+.slick-next {/*次へ矢印の位置と形状*/
+    right:2.5%;
+    transform: rotate(45deg);
+}
+/*ドットナビゲーションの設定*/
+.slick-dots {
+  position: relative;
+  z-index: 3;
+  text-align:center;
+  margin:-50px 0 0 0;
+}
+.slick-dots li {
+  display:inline-block;
+  margin:0 5px;
+}
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width:8px;/*ドットボタンのサイズ*/
+  height:8px;/*ドットボタンのサイズ*/
+  display:block;
+  border-radius:50%;
+  background:#ccc;/*ドットボタンの色*/
+}
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+
+/* タブレット以下のサイズの端末 */
+@media only screen and (max-width: 820px) {
+    main {
+        width: 100%;
+    }
+
+    .content {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .haikei1 {
+        margin: 0;
+    }
+
+    .body {
+        margin: 0;
+    }
+
+    .info{
+        width: 300px;
+    }
+
+    #te {
+        width: 100px;
+    }
+
+
+    .ff {
+        font-size: 30px;
+    }
+
+    #fish{
+        width: 100px;
+    }
+
+    .sui {
+        top: 150px;
+    }
+
+    canvas {
+        height: 180px;
+    }
+
+    #best {
+        font-size: 40px;
+        margin-top: 28px;
+        margin-left: 0;
+        -webkit-text-stroke:2.5px #EDE6D7 ;
+    }
+
+    #shot{
+        font-size: 40px;
+        margin-top:50px ;
+        margin-left: 30px;
+        -webkit-text-stroke:2.5px #EDE6D7 ;
+    }
+
+    #uu {
+        margin-top: 175px;
+    }
+
+    #hyou {
+        margin-top: 75px;
+    }
+
+    #car {
+        margin-top: -20px;
+    }
+
+    #up {
+        margin-top: -20px;
+    }
+
+    #ttt {
+        height: 600px;
+    }
+
+    #siti {
+        width: 250px;
+        margin-top: 200px;
+    }
+
+    #seven{
+        margin-top: 150px;
+        left: 30px;
+    }
+
+    #five {
+        left: 30px;
+        margin-top:210px;
+    }
+
+    #three {
+        left: 30px;
+        margin-top: 270px;
+    }
+
+    #nen{
+        font-family: 'Yuji Syuku', serif;
+        font-size: 25px;
+        position: absolute;
+        bottom:200px;
+        left: 50px;
+        font-weight: bold;
+    }
+    
+    .ni {
+        margin: 0;
+    }
+    
+    #bou {
+        font-family: 'Yuji Syuku', serif;
+        font-size: 20px;
+        width: 10px;
+        position: absolute;
+        bottom:330px;
+        left: 55px;
+        font-weight: bold;
+    }
+
+    #boo {
+        font-family: 'Yuji Syuku', serif;
+        font-size: 20px;
+        width: 10px;
+        position: absolute;
+        bottom:175px;
+        left: 55px;
+        font-weight: bold;
+    }
+
+    #in {
+        width: 70px;
+        margin-top: 60px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+    
+    #acc {
+        font-family: 'Lobster', cursive;
+        font-size: 30px;
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+
+    #san {
+        margin-top: 60px;
+        position: relative;
+        height: 600px;
+        background-color: #f4dcdc;
+        border-radius: 20px;
+    }
+
+    #siti {
+        margin-top: 50px;
+    }
+
+    #iya{
+        position: absolute;
+        bottom: 60px;
+    }
+
+    #sune {
+        position: absolute;
+        bottom: 35px;
+    }
+
+    #fifteen{
+        position: absolute;
+        top: -100px;
+    }
+
+    #nen {
+        position: absolute;
+        bottom: 200px;
+    }
+}
