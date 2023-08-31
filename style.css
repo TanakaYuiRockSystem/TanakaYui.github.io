@@ -11,18 +11,26 @@
 
 .body {
     background-color:#e1daca;
-    margin-left: 150px;
+    margin-left: 200px;
     overflow-x: hidden;
 }
 
-/* PCのみ表示されるmenu画面 */
 .moto {
     position: fixed;
     right: 100px;
-    top: 40px;
+    top: 20px;
+}
+
+.amoto {
+    margin-bottom: 60px;
+    padding-left: 10px;
 }
 
 .moto li {
+    list-style: none;
+}
+
+.amoto li {
     list-style: none;
 }
 
@@ -30,6 +38,108 @@
     font-family: 'Bowlby One SC', cursive;
     font-size: 50px;
     color: #2c4473;
+    margin-bottom: 10px;
+}
+
+.amenu {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 50px;
+    color: #ede6d7 ;
+    -webkit-text-stroke:2px #2c4473 ;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.bmenu{
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 50px;
+    color: #2c4473 ;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.aamenu {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 50px;
+    color: #ede6d7 ;
+    -webkit-text-stroke:2px #2c4473 ;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.bbmenu {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 50px;
+    color: #2c4473 ;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.aaamenu {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 50px;
+    color: #ede6d7 ;
+    -webkit-text-stroke:2px #2c4473 ;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.bbbmenu {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 50px;
+    color: #2c4473 ;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.aaaamenu {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 50px;
+    color: #ede6d7 ;
+    -webkit-text-stroke:2px #2c4473 ;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.bbbbmenu {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 50px;
+    color: #2c4473 ;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.mu {
+    display: flex;
+}
+
+.menyu {
+    display: flex;
+    width: 500px;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.sose {
+    display: flex;
+    padding-left: 0;
+    animation: flowing 40s linear infinite;
+    transform: rotateX(100%);
+}
+
+.mmm {
+    display: flex;
+    display: block;
+}
+
+@keyframes flowing {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
 
 .moto a {
@@ -39,15 +149,88 @@
     margin:auto 0;
 }
 
+.amoto a{
+    text-decoration:none ;
+    color: #2c4473;
+    font-size: 25px;
+    margin:auto 0;
+}
+
+#atete {
+    width: 60px;
+}
+
 .menubar:hover {
     .chap{
         animation: pikopiko 1s steps(2, start) infinite;
     }
-    
+
+    #ote{
+        border-bottom: #99593b 3px solid;
+    }
+
+    #foo{
+        border-bottom: #006633 3px solid;
+    }
+
+    #ure{
+        border-bottom: #D04D18 3px solid;
+    }
+
+    #pool{
+        border-bottom: #678db0 3px solid;
+    }
+
+    #deb{
+        border-bottom: #f8b500 3px solid;
+    }
+
+    #fug{
+        border-bottom: #c30d23 3px solid;
+    }
 }
 
 @keyframes pikopiko {
-    from {
+    0% {
+      transform: rotate(20deg);
+    }
+    to {
+      transform: rotate(-10deg);
+    }
+  }
+
+  .amenubar:hover{
+    .achap{
+        animation: pikopiko 1s steps(2, start) infinite;
+    }
+
+    #aote{
+        border-bottom: #99593b 3px solid;
+    }
+
+    #afoo{
+        border-bottom: #006633 3px solid;
+    }
+
+    #aure{
+        border-bottom: #D04D18 3px solid;
+    }
+
+    #apool{
+        border-bottom: #678db0 3px solid;
+    }
+
+    #adeb{
+        border-bottom: #f8b500 3px solid;
+    }
+
+    #afug{
+        border-bottom: #c30d23 3px solid;
+    }
+  }
+
+  @keyframes pikopiko {
+    0% {
       transform: rotate(20deg);
     }
     to {
@@ -58,16 +241,114 @@
 .menubar {
     display: flex;
     width: 570px;
-    border-bottom: #2c4473 3px solid;
     margin-bottom: 10px;
+}
+
+#ote {
+    display: flex;
+    width: 570px;
+    border-bottom: #2c4473 3px solid;
+}
+
+#aote {
+    display: flex;
+    width: 480px;
+    border-bottom: #2c4473 3px solid;
+    margin-bottom: 15px;
+}
+
+#foo {
+    display: flex;
+    width: 570px;
+    border-bottom: #2c4473 3px solid;
+}
+
+#afoo {
+    display: flex;
+    width: 480px;
+    border-bottom: #2c4473 3px solid;
+    margin-bottom: 15px;
+}
+
+#ure {
+    display: flex;
+    width: 570px;
+    border-bottom: #2c4473 3px solid;
+}
+
+#aure {
+    display: flex;
+    width: 480px;
+    border-bottom: #2c4473 3px solid;
+    margin-bottom: 15px;
+}
+
+#pool {
+    display: flex;
+    width: 570px;
+    border-bottom: #2c4473 3px solid;
+}
+
+#apool {
+    display: flex;
+    width: 480px;
+    border-bottom: #2c4473 3px solid;
+    margin-bottom: 15px;
+}
+
+#deb {
+    display: flex;
+    width: 570px;
+    border-bottom: #2c4473 3px solid;
+}
+
+#adeb {
+    display: flex;
+    width: 480px;
+    border-bottom: #2c4473 3px solid;
+    margin-bottom: 15px;
+}
+
+#fug {
+    display: flex;
+    width: 570px;
+    border-bottom: #2c4473 3px solid;
+}
+
+#afug {
+    display: flex;
+    width: 480px;
+    border-bottom: #2c4473 3px solid;
+    margin-bottom: 15px;
 }
 
 #iji,#big,#fugu {
     width: 70px;
 }
 
-#big {
+#aiji,#abig,#afugu {
+    width: 70px;
+}
+
+#iji {
+    margin-right: 15px;
+}
+
+#fugu {
+    width:75px ;
     margin-right: 10px;
+}
+
+#afug {
+    margin-right: 30px;
+}
+
+#big {
+    margin-right: 20px;
+}
+
+#abig {
+    margin-right: 20px;
 }
 
 #tete {
@@ -75,14 +356,34 @@
     margin-right: 20px;
 }
 
+#atete {
+    width: 60px;
+    margin-right: 20px;
+}
+
+#aiji {
+    margin-right: 10px;
+}
+
 #suizokkann {
     width: 120px;
     margin-left: -30px;
+    margin-right: 0;
+}
+
+#asuizokkann{
+    width: 120px;
+    margin-left: -15px;
     margin-right: -10px;
 }
 
 #ebi {
-    width: 80px;
+    height: 65px;
+}
+
+#aebi {
+    margin-top: 10px;
+    height: 58px;
 }
 
 #tamago {
@@ -90,7 +391,16 @@
     width: 60px;
 }
 
+#atamago{
+margin-left: 10px;
+    width: 55px;
+}
+
 .mokuji {
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.amokuji {
     font-family: 'Bowlby One SC', cursive;
 }
 
@@ -105,6 +415,10 @@
     right: 0;
 }
 
+.anihonn {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-weight: bold;   
+}
 
 .content {
     max-width: 500px;
@@ -150,6 +464,7 @@
 }
 
 #prof {
+    /* font-family: "dela-gothic-one", sans-serif; */
     font-family: 'Bowlby One SC', cursive;
     font-weight: 900;
     font-style: normal;
@@ -235,7 +550,6 @@
     display: flex;
     animation: loop-slide 40s infinite linear 1s both;
 }
-
 @-webkit-keyframes loop-slide {
     from {
         transform: translateX(0);
@@ -254,7 +568,7 @@
 }
 
 
-.gohan,.otan {
+.gohan,.otan,.mmm {
     list-style: none;
 }
 
@@ -382,8 +696,7 @@ canvas {
 }
 
 .cup , .hyui{
-    position: relative;
-
+  position: relative;
 }
 
 .cc {
@@ -540,6 +853,13 @@ canvas {
     bottom: 0%;
 }
 
+#shuku {
+    width: 60px;
+    position: absolute;
+    left: 60px;
+    top: 55px;
+}
+
 #in {
     width: 70px;
     margin-top: 60px;
@@ -552,7 +872,7 @@ canvas {
     font-size: 30px;
     margin-top: 70px;
     margin-left: 30px;
-    color: black;
+    color: #333;
 }
 
 .gram a{
@@ -607,8 +927,7 @@ canvas {
     background:#333;/*ドットボタンの現在地表示の色*/
 }
 
-/* タブレット以下のサイズの端末 */
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 768px) {
     main {
         width: 100%;
     }
@@ -640,16 +959,30 @@ canvas {
         font-size: 30px;
     }
 
+    .wave {
+        height: 510px;
+    }
+
     #fish{
-        width: 100px;
+        width: 120px;
     }
 
-    .sui {
-        top: 150px;
+    #pen {
+        width: 44px;
+        top: 76px;
+        right: 20px;
     }
 
-    canvas {
-        height: 180px;
+    #penguin {
+        width: 28px;
+        top: 100px;
+        right: 70px;
+    }
+
+    #sakana {
+        width: 45px;
+        left: 90px;
+        top: 107px;
     }
 
     #best {
@@ -692,26 +1025,29 @@ canvas {
     }
 
     #seven{
-        margin-top: 150px;
-        left: 30px;
+        font-size: 50px;
+        margin-top: 195px;
+        left: 40px;
     }
 
     #five {
-        left: 30px;
-        margin-top:210px;
+        font-size: 50px;
+        left: 40px;
+        margin-top:240px;
     }
 
     #three {
-        left: 30px;
-        margin-top: 270px;
+        font-size: 50px;
+        left: 40px;
+        margin-top: 285px;
     }
 
     #nen{
         font-family: 'Yuji Syuku', serif;
         font-size: 25px;
         position: absolute;
-        bottom:200px;
-        left: 50px;
+        bottom:300px;
+        left: 55px;
         font-weight: bold;
     }
     
@@ -725,7 +1061,7 @@ canvas {
         width: 10px;
         position: absolute;
         bottom:330px;
-        left: 55px;
+        left: 60px;
         font-weight: bold;
     }
 
@@ -735,7 +1071,7 @@ canvas {
         width: 10px;
         position: absolute;
         bottom:175px;
-        left: 55px;
+        left: 60px;
         font-weight: bold;
     }
 
@@ -783,5 +1119,42 @@ canvas {
     #nen {
         position: absolute;
         bottom: 200px;
+    }
+
+    #shuku{
+        width: 50px;
+        left: 40px;
+    }
+
+    #aote{
+        width:370px ;
+    }
+
+    #afoo {
+        width: 370px;
+    }
+
+    #aure {
+        width: 370px;
+    }
+
+    #apool {
+        width: 370px;
+    }
+
+    #adeb {
+        width: 370px;
+    }
+
+    #afug {
+        width: 370px;
+    }
+
+    #foodie {
+        text-align: center;
+    }
+
+    #aebi {
+        width: 100px;
     }
 }
